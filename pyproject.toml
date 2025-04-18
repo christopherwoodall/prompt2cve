@@ -1,0 +1,27 @@
+[project.scripts]
+cve-mcp = "server:main"
+
+[build-system]
+requires = ["hatchling>=1.11.0"]
+build-backend = "hatchling.build"
+
+[project]
+requires-python = ">=3.10"
+version = "0.0.1"
+
+name        = "access-mcp"
+description = "Using LLMs and MCP to execute CVEs."
+readme      = ".github/README.md"
+license     = "MIT"
+
+dependencies = [
+  "mcp[cli]"
+]
+
+
+[tool.hatch.build]
+ignore-vcs = false
+reproducible = true
+directory = "dist"
+sources = ["src"]
+include = ["src/", "LICENSE", "pyproject.toml", ".github/README.md"]
