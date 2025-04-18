@@ -2,7 +2,7 @@
 
 
 ## Description
-Minimal example of using LLMs and MCP to test CVEs. This example uses the `gradio` library to create a vulnerable service that is exploitable via LFI (CVE-2024-1561). The goal is to use the `mcp` library to scan for open ports and exploit the vulnerability by sending a request to the server for the file at `/etc/shadow`.
+Minimal example of using LLMs and MCP to test CVEs. This example uses the `gradio` library to create a vulnerable service that is exploitable via LFI (CVE-2024-1561). The goal is to use the tools to scan for open ports and exploit the vulnerability by sending a request to the server for the file at `/etc/shadow`.
 
 
 ## Demo
